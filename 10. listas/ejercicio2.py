@@ -39,7 +39,7 @@ def ordenar_tareas(tareas):
     tareas.sort(key = lambda x: x ["prioridad"])
     print()
     print("-_-_-_-_-_-_-_-_-_- tarea ordenada por prioridad -_-_-_-_-_-_-_-_-_-_-")
-    
+
 
 def eliminar_tareas(tareas):
     pass

@@ -46,6 +46,7 @@ def eliminar_tareas(tareas):
 
 
 def menu():
+    #borrar despues (tareas de prueba)
     tareas = [{"descripcion":"Programar ciclos", "prioridad": 5},
 
             {"descripcion":"Programar condicinales", "prioridad": 10},

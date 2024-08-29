@@ -1,9 +1,13 @@
+
+
+
 def merge_sort(lista):
-    if len(lista)>1:
+    if len(lista) > 1:
         mitad = len(lista) // 2
         
         izq = lista[:mitad]
         der = lista [mitad:]
+        
         merge_sort(izq)
         merge_sort(der) #parte la lista de mitad en mitad
         
@@ -18,13 +22,13 @@ def merge_sort(lista):
                 j += 1
             k += 1
             
-        while j < len(izq):
+        while i < len(izq):
             lista[k]= izq[i]
             i += 1
             k += 1
-        while j > len(der):
+        while j < len(der):
             lista[k] = der[j]
-            i += 1
+            j += 1
             k += 1
 
 

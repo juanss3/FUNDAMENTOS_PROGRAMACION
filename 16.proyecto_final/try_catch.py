@@ -1,11 +1,11 @@
-def main():
-    try:
-        num_1 = int(input("imgrese el numero 1: "))
-        num_2 = int(input("imgrese el numero 2: "))
-        suma = num_1 + num_2
+def evaluar(edad):
+    if edad < 18:
+        return "menor"
+    elif edad > 65:
+        return " mayor"
+    else:
+        return "adulto"
 
-        print(suma)
-    except ValueError:
-        print("DATO INGRESADO NO VALIDO")
-        main()
-main()
+edad = 34
+
+evaluar(edad)

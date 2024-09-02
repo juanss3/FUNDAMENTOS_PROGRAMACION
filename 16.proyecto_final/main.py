@@ -102,7 +102,10 @@ def main():
                             print("-----------Su compra ha sido realizada-----------")
                             mostrar_carrito()
                             precio_total()
-                            break
+                            carrito.clear()
+                            input("pulse enter para continuar . . .")
+                            limpiar_terminal()
+                            main()
                         else:
                             limpiar_terminal()
                             main()

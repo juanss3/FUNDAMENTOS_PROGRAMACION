@@ -1,4 +1,5 @@
 import os
+import sys
 
 
 productos = [
@@ -103,7 +104,7 @@ def main():
                             mostrar_carrito()
                             precio_total()
                             carrito.clear()
-                            input("pulse enter para continuar . . .")
+                            input("\npulse enter para continuar . . .")
                             limpiar_terminal()
                             main()
                         else:
@@ -117,7 +118,7 @@ def main():
 
             elif opcion == 5:
                 print("Saliendo . . .")
-                break
+                sys.exit()
 
             else:
                 print("*************opcion no valida*************")
